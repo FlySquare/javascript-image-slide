@@ -1,0 +1,76 @@
+.akanyazi img{
+    position: absolute;
+}
+.kapsayici{
+    position: absolute;
+    margin-left: 48px;
+    margin-top: 55px;
+}
+
+#resim1{
+    width: 283px;
+    height: 573px;
+    top: -650px;
+    left: 170px;
+}
+
+#resim2{
+    width: 144px;
+    left: 311px;
+    top: -215px;
+}
+
+#resim3{
+    width: 285px;
+    left: 310px;
+    height: 573px;
+    top: -650px;
+}
+
+#resim4{
+    width: 344px;
+    left: 594px;
+    top: -455px;
+    height: 386px;
+}
+
+#resim5{
+    width: 344px;
+    left: 594px;
+    height: 381px;
+    top: -455px;
+}
+
+#resim6{
+    width: 382px;
+    left: 36px;
+    top: -770px;
+}
+
+#resim7{
+    width: 284px;
+    height: 575px;
+    left: 993px;
+    top: -600px;
+}
+
+#resim8{
+    width: 576px;
+    left: 417px;
+    height: 192px;
+    top: -205px;
+}
+#resim9{
+    width: 144px;
+    left: 1133px;
+    top: 662px;
+    opacity: 0;
+}
+
+#resim10{
+    width: 284px;
+    left: 993px;
+    top: 42px;
+    height: 334px;
+    opacity: 0;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+<body>
+    <div class="akanyazi">
+        <div class="kapsayici">
+            <img id="resim1" src="images/kirmizi.png">
+        <img id="resim2" src="images/mavi2.png">
+        <img id="resim3" src="images/sari.png">
+        <img id="resim4" src="images/kirmizi3.png">
+        <img id="resim5" src="images/mavi3.png">
+        </div>
+        <!-- ayni anda iniyor -->
+        <img id="resim6" src="images/mavi1.png">
+        <img id="resim7" src="images/sari2.png">
+        <!-- ayni anda iniyor -->
+        <img id="resim8" src="images/kirmizi2.png">
+        <img id="resim9" src="images/mavi2.png">
+        <img id="resim10" src="images/web3.png">
+    </div>
+    <script>
+        var resim1_top = 170;
+        var resim2_top = 599;
+        var resim3_top = 170;
+        var resim4_top = 357;
+        var resim5_top = 170;
+        var resim6_top = 42;
+        var resim7_top = 233;
+        var resim8_top = 42;
+        var resim9_top = 662;
+        var resim10_top = 334;
+
+
+
+
+        function sleep(milliseconds) {
+            return new Promise(resolve => setTimeout(resolve, milliseconds));
+        }
+
+        async function resim2_move(){
+            for(let i = $('#resim2').css('top').slice(0,-2);i<=resim2_top;i++){
+                await sleep(1);
+            $('#resim2').css('top',i+'px');
+            if(i == 550){
+                resim1_move();
+            }
+        }
+        }
+
+        async function resim1_move(){
+            for(let i = $('#resim1').css('top').slice(0,-2);i<=resim1_top;i++){
+                await sleep(1);
+            $('#resim1').css('top',i+'px');
+            if(i==-20){
+                resim3_move();
+            }
+        }
+    }
+
+        async function resim3_move(){
+            for(let i = $('#resim3').css('top').slice(0,-2);i<=resim3_top;i++){
+                await sleep(1);
+            $('#resim3').css('top',i+'px');
+           if(i==0){
+               resim4_move();
+           }
+        }
+        }
+
+        async function resim4_move(){
+            for(let i = $('#resim4').css('top').slice(0,-2);i<=resim4_top;i++){
+                await sleep(1);
+            $('#resim4').css('top',i+'px');
+           if(i==330){
+               resim6_move();
+           }
+        }
+        }
+        async function resim6_move(){
+            for(let i = $('#resim6').css('top').slice(0,-2);i<=resim6_top;i++){
+                await sleep(1);
+            $('#resim6').css('top',i+'px');
+            if(i==-750){
+               resim7_move();
+           }
+        }
+        }
+        async function resim7_move(){
+            for(let i = $('#resim7').css('top').slice(0,-2);i<=resim7_top;i++){
+                await sleep(1);
+            $('#resim7').css('top',i+'px');
+           if(i==-300){
+               resim5_move();
+           }
+           if(i==resim7_top){
+               resim8_move();
+           }
+        }
+        }
+        async function resim5_move(){
+            for(let i = $('#resim5').css('top').slice(0,-2);i<=resim5_top;i++){
+                await sleep(1);
+            $('#resim5').css('top',i+'px');
+                
+        }
+        }
+        async function resim8_move(){
+            for(let i = $('#resim8').css('top').slice(0,-2);i<=resim8_top;i++){
+                await sleep(1);
+            $('#resim8').css('top',i+'px');
+                if(resim8_top == i){
+                    resim910_smooth();
+                }
+        }
+        }
+
+        async function resim910_smooth(){
+            for(let i = 0;i<=1000;i++){
+            if(i!=1000){
+                $('#resim9').css('opacity','0.0'+i);
+                $('#resim10').css('opacity','0.0'+i);
+            }
+                
+            await sleep(1);
+        }
+        }
+        resim2_move();
+   
+    </script>
+</body>
+</html>
